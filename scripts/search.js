@@ -1,4 +1,5 @@
-export function searchFunctionality() {
+// // search.js
+export function searchFunctionality(products, displayProducts) {
   document.querySelector(".js-search-button").addEventListener("click", () => {
     const query = document
       .querySelector(".js-search-input")

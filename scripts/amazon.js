@@ -123,4 +123,4 @@ updateCartQuantity();
 //   });
 // }
 
-searchFunctionality();
+searchFunctionality(products, displayProducts);
