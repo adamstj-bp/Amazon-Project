@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Payment & Delivery</title>
+
+    <link rel="stylesheet" href="styles/shared/amazon-header.css" />
+    <link rel="stylesheet" href="styles/pages/payment.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="amazon-header">
+        <div class="amazon-header-left-section">
+          <a href="amazon.html" class="header-link">
+            <img class="amazon-logo" src="images/amazon-logo-white.png" />
+            <img
+              class="amazon-mobile-logo"
+              src="images/amazon-mobile-logo-white.png"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="main">
+        <h2>Payment & Delivery Info</h2>
+
+        <form id="payment-form">
+          <!-- Delivery Info -->
+          <h3>Delivery Information</h3>
+          <input id="fullname" type="text" placeholder="Full Name" required />
+          <input id="email" type="email" placeholder="Email" required />
+          <input id="phone" type="tel" placeholder="Phone Number" required />
+          <input
+            id="delivery-address"
+            type="text"
+            placeholder="Address"
+            required
+          />
+          <input id="city" type="text" placeholder="City" required />
+          <input
+            id="zip"
+            type="text"
+            placeholder="ZIP / Postal Code"
+            required
+          />
+
+          <!-- Payment Info -->
+          <h3>Payment Details</h3>
+          <div class="card-icons">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+              alt="Visa"
+              height="30"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
+              alt="Mastercard"
+              height="30"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Verve_card_logo.svg"
+              alt="Verve"
+              height="30"
+            />
+          </div>
+          <input
+            id="card"
+            type="text"
+            placeholder="Card Number"
+            inputmode="numeric"
+            autocomplete="off"
+            maxlength="19"
+            required
+          />
+          <div class="flex-row">
+            <input
+              id="expiry"
+              type="text"
+              placeholder="MM/YY"
+              maxlength="5"
+              required
+            />
+            <input
+              id="cvv"
+              type="text"
+              placeholder="CVC"
+              maxlength="3"
+              inputmode="numeric"
+              required
+            />
+            <input type="text" id="name" placeholder="Name on Card" required />
+          </div>
+          <label id="name" class="save-info">
+            <input type="checkbox" /> Save info for next time
+          </label>
+
+          <button type="submit">Pay Now</button>
+          <div class="secure-text">🔒 Your payment is secure</div>
+        </form>
+
+        <div id="message" class="success-message hidden"></div>
+      </div>
+    </div>
+
+    <script type="module" src="scripts/payment.js"></script>
+  </body>
+</html>

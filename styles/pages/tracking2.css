@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, sans-serif;
+  /* text-align: center; */
+  background-color: #f4f4f4;
+  padding: 40px;
+  margin: 0;
+}
+.swift-header {
+  height: 60px;
+  /* padding-left: 30px;
+  padding-right: 30px; */
+  background-color: #2c3e50;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.1);
+}
+.header-link {
+  display: flex;
+  align-items: center;
+}
+.amazon-logo {
+  width: 75px;
+}
+/* .main-body {
+  max-width: 1850px;
+  margin-top: 90px;
+  margin-bottom: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  /* margin-left: auto;
+     margin-right auto;
+     Is a trick for centering an element horizontally
+     without needing a container. */
+/* margin-left: auto;
+  margin-right: auto; */
+/* } */
+.main-body {
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  max-width: 850px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: green;
+  border: none;
+  color: white;
+}
+
+.order-tracking {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  /* display: inline-block;
+  text-align: left; */
+  width: 100%;
+  max-width: 850px;
+  box-sizing: border-box;
+}
+
+.back-to-orders-link {
+  display: block;
+  margin-bottom: 30px;
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.delivery-date {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.product-info {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.product-image {
+  max-width: 250px;
+  max-height: 250px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.progress-labels-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.current-status {
+  color: rgb(6, 125, 98);
+}
+
+@media (max-width: 575px) {
+  .progress-labels-container {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .progress-labels-container {
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+
+  .progress-label {
+    margin-bottom: 3px;
+  }
+}
+
+.progress-bar-container {
+  height: 25px;
+  width: 100%;
+
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: green;
+  border-radius: 50px;
+  width: 50%;
+}
+.status-message {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0a8754;
+  margin-top: 15px;
+}
